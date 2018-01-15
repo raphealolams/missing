@@ -10,154 +10,237 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
   </head>
-  <body class="">
-    <nav class="navbar navbar-expand-lg navbar-light bg-light mb3 pb-3 display-5">
-      <a href="#" class="navbar-brand">Missing Persons</a>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <form class="form-inline my-2 my-lg-0">
-          <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-        </form>
-      </div>
-      <div>
-        <ul class="navbar-nav float-right">
-          <li class="nav-item active">
-            <a class="nav-link" href="#">Sign in <span class="sr-only">(current)</span></a>
-          </li>
-          <li class="nav-item">
-            <button class="btn btn-outline-primary my-2 my-sm-0" type="submit">Join</button>
-          </li>
-        </ul>
+  <body>
+    <nav class="main-nav">
+      <nav class="navbar navbar-light justify-content-between display-6">
+        <a href="#" class="navbar-brand">Missing Persons</a>
+        <nav class="navbar justify-content-center navbar-expand-lg navbar-light">
+          <ul class="nav justify-content-center">
+            <li class="nav-item">
+              <a class="nav-link active" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Archive</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Report a Sighting</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Report a Case</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Sign in <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Join</button>
+            </li>
+          </ul>
+        </nav>
+      </nav>
+    </nav>
+    <nav class="navbar border navbar-light justify-content-between bg-light display-6">
+      <div class="breadcrumb__nav flat">
+        <a href="#">Africa</a>
+        <a href="#">West Africa</a>
+        <a href="#">Nigeria</a>
+        <a href="#">Lagos</a>        
       </div>
     </nav>
-    <nav class="navbar justify-content-center navbar-expand-lg border navbar-light bg-light text-center">
-      <ul class="nav justify-content-center">
-        <li class="nav-item">
-          <a class="nav-link active" href="#">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Archive</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Report a Sighting</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Report a Case</a>
-        </li>
-      </ul>
+    <nav class="navbar navbar-light justify-content-between bg-light display-6">
+      <div class="mx-auto">
+          <form class="form-inline">
+              <div class="form-group mb-3">
+                <input type="text" class="form-control" id="staticEmail2" placeholder="email@example.com">
+              </div>
+              <div class="form-group mx-sm-3 mb-3">
+                <input type="password" class="form-control" id="inputPassword2" placeholder="Password">
+              </div>
+              <button type="submit" class="btn btn-primary mb-3">Confirm identity</button>
+            </form>
+      </div>
     </nav>
-    <div class="container mt-2 p-3">
+    
+    <!-- <div class="container mt-2 p-3">
         <div class="card text-center">
           <h1>Top Results</h1>
         </div>
-    </div>
-    <div class="container-fluid">
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-3 mb-3">
-            <div class="border">
-              <img class="card-img-top" src="https://randomuser.me/api/portraits/men/80.jpg" alt="Card image cap">
-              <div class="card-body">
-                <h5 class="card-title">Name: <strong>John Doe</strong></h5>
-                <p class="card-text">Age: <strong>27</strong></p>                
-                <p class="card-text">Last Seen: <strong>Lagos</strong></p>
-                <a href="#" class="btn btn-primary">Click For More</a>
+    </div> -->
+    <div class="container-fluid main-div">
+      <div class="container left-div">
+        <div class="m-1 p-1 mb-1 pb-1">
+          <div class="card bg-light">
+            <div class="card-body">
+              <div class="">
+                <form class="text-center">
+                  <label><strong>Filter </strong></label>
+                  <input type="text" class="form-control">
+                </form>
+                <hr>
               </div>
-            </div>
-          </div>
-          <div class="col-sm-3 mb-3">
-            <div class="border">
-                <img class="card-img-top" src="https://randomuser.me/api/portraits/men/84.jpg" alt="Card image cap">
-                <div class="card-body">
-                  <h5 class="card-title">Name: <strong>Jackson Joe</strong></h5>
-                  <p class="card-text">Age: <strong>24</strong></p>
-                  <p class="card-text">Last Since: <strong>Abeokuta</strong></p>                  
-                  <a href="#" class="btn btn-primary">Click For More</a>
-                </div>
-            </div>
-          </div>
-          <div class="col-sm-3 mb-3">
-            <div class="border">
-              <img class="card-img-top" src="https://randomuser.me/api/portraits/women/89.jpg" alt="Card image cap">
-              <div class="card-body">
-                <h5 class="card-title">Name: <strong>Tiwatope Layo</strong></h5>
-                <p class="card-text">Age: <strong>20</strong></p>
-                <p class="card-text">Last Seen: <strong>Abuja</strong></p>                
-                <a href="#" class="btn btn-primary">Click For More</a>
+              <div class="mt-2">
+                <form>
+                  <label><strong>Only Show hotels with amenities</strong></label>
+                  <div class="form-group">
+                    <input data-ga-label="search-by-location" type="checkbox" class="location-checkbox" name="">
+                    <i class="fa fa-map-pin"></i>                      
+                    <label for="restaurant(s)">
+                      <span>West Africa</span>
+                    </label>
+                  </div>
+                  <div class="form-group">
+                    <input data-ga-label="search-by-location" type="checkbox" class="location-checkbox" value="" name="">
+                    <i class="fa fa-map-marker"></i>
+                    <label for="location">
+                      <span>East Africa</span>
+                    </label>
+                  </div>
+                  <div class="form-group">
+                    <input data-ga-label="search-by-location" type="checkbox" class="location-checkbox" value="" name="">
+                    <i class="fa fa-map-pin"></i>
+                    <label for="location">
+                      <span>North Africa</span>
+                    </label>
+                  </div>
+                  <div class="form-group">
+                    <input data-ga-label="search-by-location" id="loactions" type="checkbox" class="location-checkbox" value="" name="">
+                    <i class="fa fa-map-marker"></i>
+                    <label for="location">
+                      <span>South Africa</span>
+                    </label>
+                  </div>
+                  <div class="text-center">
+                    <button type="submit" class="btn btn-info mb-3">Refine Search</button>
+                  </div>
+                </form>
               </div>
-            </div>
-          </div>
-          <div class="col-sm-3">
-            <div class="border">
-              <img class="card-img-top" src="https://randomuser.me/api/portraits/women/84.jpg" alt="Card image cap">
-              <div class="card-body">
-                <h5 class="card-title">Name: <strong>Sandra Smith</strong></h5>
-                <p class="card-text">Age: <strong>22</strong></p>
-                <p class="card-text">Last Seen: <strong>Ikeja</strong></p>                
-                <a href="#" class="btn btn-primary">Click For More</a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="container-fluid">
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-3 mb-3">
-            <div class="border">
-              <img class="card-img-top" src="https://randomuser.me/api/portraits/men/10.jpg" alt="Card image cap">
-              <div class="card-body">
-                <h5 class="card-title">Name: <strong>Dickson </strong></h5>
-                <p class="card-text">Age: <strong>30</strong></p>
-                <p class="card-text">Last Seen: <strong>London</strong></p>                
-                <a href="#" class="btn btn-primary">Click For More</a>
-              </div>
-            </div>
-          </div>
-          <div class="col-sm-3">
-            <div class="border">
-                <img class="card-img-top" src="https://randomuser.me/api/portraits/women/26.jpg" alt="Card image cap">
-                <div class="card-body">
-                  <h5 class="card-title">Name: <strong>Rita James</strong></h5>
-                  <p class="card-text">Age: <strong>Nil</strong></p>
-                  <p class="card-text">Last Seen: <strong>Nil</strong></p>                  
-                  <a href="#" class="btn btn-primary">Click For More</a>
-                </div>
-            </div>
-          </div>
-          <div class="col-sm-3">
-            <div class="border">
-              <img class="card-img-top" src="https://randomuser.me/api/portraits/men/90.jpg" alt="Card image cap">
-              <div class="card-body">
-                <h5 class="card-title">Name: <strong>Jack Solomon</strong></h5>
-                <p class="card-text">Age: <strong>23</strong></p>
-                <p class="card-text">Last Seen: <strong>Texas</strong></p>                
-                <a href="#" class="btn btn-primary">Click For More</a>
-              </div>
-            </div>
-          </div>
-          <div class="col-sm-3">
-            <div class="border">
-              <img class="card-img-top" src="https://randomuser.me/api/portraits/women/98.jpg" alt="Card image cap">
-              <div class="card-body">
-                <h5 class="card-title">Name: <strong>Kars Love</strong></h5>
-                <p class="card-text">Age: <strong>31</strong></p>
-                <p class="card-text">Last Seen: <strong>Lagos</strong></p>                
-                <a href="#" class="btn btn-primary">Click For More</a>
+              <hr>
+              <div class="mt-2">
+                <form>
+                  <label><strong>Find Persons By last Address:</strong></label>
+                  <input type="text" class="form-control" placeholder="Enter Address">
+                  <div class="text-center mt-2">
+                    <button class="btn btn-info">Find Person</button> 
+                  </div>
+                </form>
               </div>
             </div>
           </div>
         </div>
       </div>
+  
+      <div class="container-fluid right-div">
+        <div class="">  
+          <h5><strong>811 Identity Found</strong></h5>
+          <div class="sorting-filters list-sorter pt-3 pb-1">
+            <ul class="hidden-xs hidden-sm sorting-inline-list">
+              <li class="sorting-inline-list-title"></li>
+              <li class="default">
+                <a href="#" class="btn btn-outline-info m-1 pt-2">Our Recommendations</a>
+              </li>
+              <li class="default">
+                <a href="#" class="btn btn-outline-primary m-1 pt-2">By Location</a>
+              </li>
+              <li class="default">
+                <a href="#" class="btn btn-outline-info m-1 pt-2">By Age</a>
+              </li>
+              <li class="default">
+                <a href="#" class="btn btn-outline-primary m-1 pt-2">By Sex</a>
+              </li>                  
+            </ul>
+          </div>
+        </div>
+        <div class="">
+          <div class="row">
+            <div class="col-sm-12">
+              <div class="card">
+                <div class="row">
+                  <div class="col-md-3">
+                    <img class="card-img" src="https://randomuser.me/api/portraits/women/26.jpg" alt="">
+                  </div>
+                  <div class="col-md-5">
+                    <h5 class="card-title">Special title treatment</h5>
+                    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="mt-3 col-sm-12">
+              <div class="card">
+                <div class="row">
+                  <div class="col-md-3">
+                    <img class="card-img" src="https://randomuser.me/api/portraits/women/26.jpg" alt="">
+                  </div>
+                  <div class="col-md-5">
+                    <h5 class="card-title">Special title treatment</h5>
+                    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="mt-3 col-sm-12">
+              <div class="card">
+                <div class="row">
+                  <div class="col-md-3">
+                    <img class="card-img" src="https://randomuser.me/api/portraits/women/26.jpg" alt="">
+                  </div>
+                  <div class="col-md-5">
+                    <h5 class="card-title">Special title treatment</h5>
+                    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="mt-3 col-sm-12">
+              <div class="card">
+                <div class="row">
+                  <div class="col-md-3">
+                    <img class="card-img" src="https://randomuser.me/api/portraits/women/26.jpg" alt="">
+                  </div>
+                  <div class="col-md-5">
+                    <h5 class="card-title">Special title treatment</h5>
+                    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="mt-3 col-sm-12">
+              <div class="card">
+                <div class="row">
+                  <div class="col-md-3">
+                    <img class="card-img" src="https://randomuser.me/api/portraits/women/26.jpg" alt="">
+                  </div>
+                  <div class="col-md-5">
+                    <h5 class="card-title">Special title treatment</h5>
+                    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            
+          </div>
+        </div>
+      </div>
     </div>
 
-    <footer class="mt-5 p-3 text-center bg-light">
-      Missing Persons Finder &copy 2018
-    </footer>
+
+ 
+    <div>
+        <footer class="mt-5 p-3 text-center bg-light">
+            Missing Persons Finder &copy 2018
+          </footer>
+    </div>
   
 
     <!-- Optional JavaScript -->

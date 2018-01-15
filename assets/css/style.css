@@ -1,0 +1,191 @@
+/*custom font*/
+@import url(https://fonts.googleapis.com/css?family=Merriweather+Sans);
+
+.main-nav {
+  width: 100%;
+  display: block;
+  background-color: white !important;
+}
+
+.main-div
+{
+  /* text-align: center; */
+  padding: 15px;  
+}
+
+.left-div
+{
+  display: inline-block;
+  max-width: 400px;
+  text-align: left;
+  padding-left: 50px;
+  vertical-align: top;
+}
+
+.right-div{
+  display: inline-block;
+  max-width: 800px;
+  text-align: left;
+  border-radius: 3px;
+  padding-right: 50px;
+}
+
+@media screen and (max-width: 600px){
+  .left-div, .right-div
+    {
+       max-width: 100%;
+    }
+}
+
+.container-left{
+  display: inline-block;
+  /* float: left; */
+  padding-left: 50px;
+}
+
+.container-right{
+  padding-right: 50px;
+}
+
+.sorting-filters {
+  display:table;
+  width:100%;
+  border-bottom:1px solid #d2e3f6;
+  margin-bottom:20px;
+  background-color:#f3f9ff ;
+}
+
+.sorting-inline-list {
+  padding-left:0;
+  display:table-row ;
+}
+
+.sorting-inline-list li{
+  list-style-type:none;
+  margin:0;
+  display:table-cell;
+  text-align:center;
+}
+
+.sorting-inline-list li a{
+  padding:10px;
+  display:block;
+  margin:0;color:#084482;
+  font-weight:400
+}
+
+.sorting-inline-list li.active a {
+  border-bottom:3px solid #14acf2;
+  color:#14acf2;
+}
+
+.sorting-inline-list-title {
+  font-weight:700;
+  padding:8px;
+}
+
+.show-tablet {
+  display:none 
+}
+
+@media screen and (min-width:768px) and (max-width:992px){ 
+  .show-tablet {
+    display:table-row
+  }
+}
+
+.breadcrumb__nav {
+	/*centering*/
+	display: inline-block;
+	overflow: hidden;
+  border-radius: 5px;
+  height: 35px;
+}
+
+.breadcrumb__nav a {
+	text-decoration: none;
+	outline: none;
+	display: block;
+	float: left;
+	font-size: 12px;
+	line-height: 36px;
+	color: white;
+	padding: 0 10px 0 60px;
+	position: relative;
+}
+
+/*since the first link does not have a triangle before it we can reduce the left padding to make it look consistent with other links*/
+.breadcrumb__nav a:first-child {
+	padding-left: 46px;
+	border-radius: 5px 0 0 5px; /*to match with the parent's radius*/
+}
+.breadcrumb__nav a:first-child:before {
+	left: 14px;
+}
+.breadcrumb__nav a:last-child {
+	border-radius: 0 5px 5px 0; /*this was to prevent glitches on hover*/
+	padding-right: 20px;
+}
+
+/*hover/active styles*/
+.breadcrumb__nav a.active, .breadcrumb__nav a:hover{
+	background: #333;
+	background: linear-gradient(#333, #000);
+}
+.breadcrumb__nav a.active:after, .breadcrumb__nav a:hover:after {
+	background: #333;
+	background: linear-gradient(135deg, #333, #000);
+}
+
+/*adding the arrows for the breadcrumbs using rotated pseudo elements*/
+.breadcrumb__nav a:after {
+	content: '';
+	position: absolute;
+	top: 0; 
+	right: -18px; /*half of square's length*/
+	/*same dimension as the line-height of .breadcrumb__nav a */
+	width: 36px; 
+	height: 36px;
+	transform: scale(0.707) rotate(45deg);
+	/*we need to prevent the arrows from getting buried under the next link*/
+	z-index: 1;
+	/*stylish arrow design using box shadow*/
+	box-shadow: 
+		2px -2px 0 2px rgba(0, 0, 0, 0.4), 
+		3px -3px 0 2px rgba(255, 255, 255, 0.1);
+	/*
+		5px - for rounded arrows and 
+		50px - to prevent hover glitches on the border created using shadows*/
+	border-radius: 0 5px 0 50px;
+}
+/*we dont need an arrow after the last link*/
+.breadcrumb__nav a:last-child:after {
+	content: none;
+}
+/*we will use the :before element to show numbers*/
+.breadcrumb__nav a:before {
+	/*some styles now*/
+	border-radius: 100%;
+	width: 20px;
+	height: 20px;
+	line-height: 20px;
+	margin: 8px 0;
+	position: absolute;
+	top: 0;
+	left: 30px;
+	font-weight: bold;
+}
+
+.flat a, .flat a:after {
+	/* background: white; */
+	color: black;
+	transition: all 0.5s;
+}
+.flat a:before {
+	background: white;
+	/* box-shadow: 0 0 0 1px #ccc; */
+}
+.flat a:hover, .flat a.active, 
+.flat a:hover:after, .flat a.active:after{
+	background: #9EEB62;
+}
